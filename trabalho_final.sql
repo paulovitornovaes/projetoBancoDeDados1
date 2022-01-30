@@ -97,7 +97,7 @@ ALTER TABLE
 CREATE TABLE IF NOT EXISTS "trabalho_final".editor (
     func_editora_fk integer NOT NULL,
     editor_chefe_fk integer NOT NULL,
-    avali_desemp character varying COLLATE pg_catalog."default" NOT NULL,
+    avali_desemp integer,
     CONSTRAINT editor_pkey PRIMARY KEY (func_editora_fk)
 ) TABLESPACE pg_default;
 
